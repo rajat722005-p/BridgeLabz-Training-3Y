@@ -1,0 +1,46 @@
+```html id="q19secure"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Form</title>
+</head>
+
+<body>
+
+    <!-- Form with security-related attributes -->
+    <h1>Secure Form</h1>
+
+    <form autocomplete="off">
+
+        <!-- Username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <!-- Security note -->
+    <p>
+        Turning off autocomplete can improve security on shared or public
+        devices by reducing the browser's tendency to save or automatically
+        fill sensitive form information.
+    </p>
+
+</body>
+
+</html>
+```

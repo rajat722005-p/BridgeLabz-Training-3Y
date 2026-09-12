@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0f172a;
+    color: white;
+}
+
+.selector-demo {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Attribute selector: selects input elements with type="text" */
+input[type="text"] {
+    border: 3px solid #2563eb;
+    padding: 12px;
+}
+
+/* Attribute selector: selects links whose href starts with https */
+a[href^="https"] {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* Pseudo-class: hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-class: focus */
+input:focus {
+    outline: 3px solid #f59e0b;
+}
+
+/* Pseudo-class: nth-child */
+.items li:nth-child(odd) {
+    background: #dbeafe;
+}
+
+.items li:nth-child(even) {
+    background: #dcfce7;
+}
+
+/* Pseudo-element: before */
+.items li::before {
+    content: "✓ ";
+    font-weight: bold;
+}
+
+/* Pseudo-element: after */
+.items li::after {
+    content: " ★";
+}
+
+/* Child combinator (>) */
+.parent > p {
+    color: #2563eb;
+}
+
+/* Descendant combinator */
+.parent div p {
+    color: #dc2626;
+}
+
+/* Adjacent sibling combinator (+) */
+.parent p + span {
+    color: #9333ea;
+    font-weight: bold;
+}
+
+/* General sibling combinator (~) */
+.parent p ~ span {
+    text-decoration: underline;
+}

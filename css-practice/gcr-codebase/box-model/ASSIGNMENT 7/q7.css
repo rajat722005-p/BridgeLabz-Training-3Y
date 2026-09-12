@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f8fafc;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #334155;
+    color: white;
+}
+
+/* Article width and readability */
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+}
+
+/* Heading typography */
+.content h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* General paragraph styling */
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+/* Different font families */
+.serif {
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.sans-serif {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+}
+
+.monospace {
+    font-family: "Courier New", monospace;
+}
+
+/* Custom styling for inline semantic elements */
+strong {
+    color: #dc2626;
+}
+
+em {
+    color: #2563eb;
+}
+
+mark {
+    background: #fde68a;
+    color: #7c2d12;
+    padding: 2px 5px;
+}
+
+/* First-letter pseudo-element */
+.intro::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
+}
+
+/* First-line pseudo-element */
+.intro::first-line {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #334155;
+    color: white;
+}

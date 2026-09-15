@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Web Studio</title>
+    <link rel="stylesheet" href="q10.css">
+</head>
+
+<body>
+
+    <!-- Sticky Header -->
+    <header class="header">
+        <h1>Creative Studio</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Creative Studio</h2>
+                <p>We create modern and beautiful digital experiences.</p>
+                <a href="#services" class="hero-button">Explore Services</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    Creative Studio is a modern digital team focused on
+                    creating user-friendly websites and digital solutions.
+                    We combine creativity with technology to build useful
+                    and engaging experiences.
+                </p>
+            </div>
+
+            <div class="about-image">
+                <img
+                    src="https://picsum.photos/id/180/600/400"
+                    alt="Creative workspace"
+                >
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+
+            <div class="service-container">
+
+                <article class="service-box">
+                    <h3>Web Design</h3>
+                    <p>
+                        Modern and responsive website designs for
+                        different types of businesses.
+                    </p>
+                </article>
+
+                <article class="service-box">
+                    <h3>Web Development</h3>
+                    <p>
+                        Fast and responsive websites using modern
+                        web development technologies.
+                    </p>
+                </article>
+
+                <article class="service-box">
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        Simple and user-friendly interfaces that provide
+                        a better experience for users.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+
+            <form>
+
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Write your message"
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Fixed Contact Button -->
+    <a href="#contact" class="floating-button">Contact</a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Creative Studio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

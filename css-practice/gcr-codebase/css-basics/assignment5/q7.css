@@ -1,0 +1,141 @@
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #eef4f8;
+    color: #172033;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    padding: 30px;
+    text-align: center;
+    background-color: #172033;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+/* Main area */
+main {
+    flex: 1;
+}
+
+/* Center the form vertically and horizontally */
+.contact-section {
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+/* Form styling */
+.contact-form {
+    width: 100%;
+    max-width: 550px;
+    padding: 35px;
+
+    background-color: white;
+    border: 1px solid #ccd5e0;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Field spacing */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Input and textarea styling */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 2px solid #c7d0db;
+    border-radius: 7px;
+
+    background-color: #f8fafc;
+    color: #172033;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+/* Focus effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #16749b;
+    background-color: white;
+}
+
+/* Message field */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #172033;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #315b8a;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #172033;
+    color: white;
+}

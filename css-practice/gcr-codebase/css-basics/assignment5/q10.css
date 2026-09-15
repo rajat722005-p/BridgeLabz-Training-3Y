@@ -1,0 +1,400 @@
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #172033;
+}
+
+/* Sticky header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 6%;
+
+    background-color: rgba(23, 32, 51, 0.95);
+    color: white;
+
+    border-bottom: 3px solid #66d9ef;
+}
+
+.header h1 {
+    font-size: 1.7rem;
+}
+
+.header nav {
+    display: flex;
+    gap: 25px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    color: #66d9ef;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+
+    min-height: 85vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(10, 25, 45, 0.65),
+            rgba(10, 25, 45, 0.65)
+        ),
+        url("https://picsum.photos/id/1018/1600/900");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    outline: 5px solid rgba(102, 217, 239, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 750px;
+    padding: 40px;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+/* Hero button */
+.hero-button {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: linear-gradient(90deg, #16749b, #315b8a);
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    border: 2px solid white;
+}
+
+.hero-button:hover {
+    background-color: #0f526e;
+}
+
+/* About section */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 80px auto;
+    padding: 50px;
+
+    background-color: white;
+
+    border: 2px solid #ccd5e0;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.about-text,
+.about-image {
+    flex: 1;
+}
+
+.about-text {
+    position: relative;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    border: 4px solid #172033;
+}
+
+/* Services section */
+.services {
+    padding: 80px 5%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f6f8,
+            #d5e8f0
+        );
+}
+
+.services > h2 {
+    font-size: 2.7rem;
+    margin-bottom: 45px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.service-box {
+    position: relative;
+
+    flex: 1;
+    max-width: 330px;
+
+    padding: 35px 25px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    border: 2px solid #9eb7c5;
+    border-radius: 12px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+
+    outline: 2px solid transparent;
+
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+    outline: 2px solid #16749b;
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    line-height: 1.6;
+}
+
+/* Contact section */
+.contact {
+    padding: 80px 20px;
+
+    background-color: #172033;
+    color: white;
+
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+.contact form {
+    width: 100%;
+    max-width: 550px;
+
+    margin: auto;
+    padding: 35px;
+
+    background-color: rgba(255, 255, 255, 0.08);
+
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+}
+
+.contact label {
+    display: block;
+    text-align: left;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+
+    margin-bottom: 20px;
+    padding: 13px;
+
+    border: 2px solid #c7d0db;
+    border-radius: 7px;
+
+    background-color: white;
+    color: #172033;
+
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #66d9ef;
+}
+
+.contact button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 2px solid white;
+    border-radius: 7px;
+
+    background: linear-gradient(90deg, #16749b, #315b8a);
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Fixed floating button */
+.floating-button {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    padding: 12px 20px;
+
+    background-color: #16749b;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 25px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+    z-index: 999;
+}
+
+/* Footer */
+footer {
+    padding: 25px;
+
+    background-color: #0f1726;
+    color: white;
+
+    text-align: center;
+}
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 35px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.7rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+    .header {
+        position: sticky;
+    }
+
+    .header nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .about {
+        width: 94%;
+        margin: 50px auto;
+        padding: 25px;
+    }
+
+    .about-text h2,
+    .services > h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .floating-button {
+        right: 15px;
+        bottom: 15px;
+    }
+}

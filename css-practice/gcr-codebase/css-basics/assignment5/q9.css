@@ -1,0 +1,133 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dfe4e8;
+    color: #20252b;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Main newspaper container */
+.newspaper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 35px;
+
+    background-color: #ffffff;
+    border: 1px solid #b8bec5;
+}
+
+/* Newspaper heading */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 4px double #20252b;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Three-column layout */
+.article {
+    column-count: 3;
+    column-gap: 40px;
+
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Heading spans all columns */
+.article h2 {
+    column-span: all;
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+
+    border-bottom: 2px solid #20252b;
+}
+
+/* Paragraph spacing */
+.article p {
+    margin-bottom: 20px;
+}
+
+/* Image aligned to the left */
+.article img {
+    width: 180px;
+    height: auto;
+    float: left;
+
+    margin: 5px 15px 10px 0;
+
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #20252b;
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Tablet layout */
+@media screen and (max-width: 900px) {
+
+    .article {
+        column-count: 2;
+        column-gap: 30px;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+}
+
+/* Mobile layout */
+@media screen and (max-width: 600px) {
+
+    .newspaper {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .article {
+        column-count: 1;
+    }
+
+    .article h2 {
+        font-size: 1.7rem;
+    }
+
+    .article img {
+        width: 150px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #1e293b;
+    color: white;
+}
+
+/* Flexbox arrangement */
+.transform-container {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.transform-item {
+    text-align: center;
+}
+
+/* Common box */
+.box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2563eb;
+    color: white;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+/* Rotate transformation */
+.rotate:hover {
+    transform: rotate(15deg);
+}
+
+/* Scale transformation */
+.scale:hover {
+    transform: scale(1.2);
+}
+
+/* Translate transformation */
+.translate:hover {
+    transform: translateY(-25px);
+}
+
+/* Skew transformation */
+.skew:hover {
+    transform: skew(10deg, 5deg);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+}

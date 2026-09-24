@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.list-group-item {
+    padding: 18px;
+}
+
+.badge {
+    padding: 8px 12px;
+}

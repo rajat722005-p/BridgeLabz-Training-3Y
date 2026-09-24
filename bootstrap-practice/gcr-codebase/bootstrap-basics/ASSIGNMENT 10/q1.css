@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #0d1b2a, #1b4965);
+}
+
+.hero-section h1 {
+    line-height: 1.2;
+}
+
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}

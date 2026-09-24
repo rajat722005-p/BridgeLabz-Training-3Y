@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border: none;
+}
+
+.alert {
+    border-radius: 10px;
+}

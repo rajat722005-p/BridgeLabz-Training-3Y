@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0f172a;
+    color: white;
+}
+
+.explanation {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Center box model demonstration */
+.demo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Margin layer */
+.margin-layer {
+    background: #fde68a;
+    padding: 40px;
+    outline: 3px dashed #b45309;
+}
+
+/* Border layer */
+.border-layer {
+    background: #bfdbfe;
+    border: 20px solid #2563eb;
+}
+
+/* Padding layer */
+.padding-layer {
+    background: #bbf7d0;
+    padding: 30px;
+}
+
+/* Content layer */
+.content-layer {
+    width: 180px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 2px solid #111827;
+}
+
+/* Comparison section */
+.comparison {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.comparison article {
+    width: 250px;
+    padding: 20px;
+    border: 15px solid #2563eb;
+    text-align: center;
+}
+
+/* Default content-box */
+.default-box {
+    box-sizing: content-box;
+    width: 250px;
+}
+
+/* border-box keeps total width inside 250px */
+.border-box {
+    box-sizing: border-box;
+    width: 250px;
+}

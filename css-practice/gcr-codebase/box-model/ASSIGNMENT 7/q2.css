@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+}
+
+/* Center boxes vertically and horizontally */
+.box-container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+/* Common box styling */
+.box {
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Width and height using px */
+.box-one {
+    width: 220px;
+    height: 180px;
+    background: #2563eb;
+}
+
+/* Width using percentage and height using vh */
+.box-two {
+    width: 45%;
+    height: 30vh;
+    min-height: 180px;
+    max-width: 450px;
+    background: #16a34a;
+    overflow: auto;
+}
+
+/* Width and height using em */
+.box-three {
+    width: 15em;
+    height: 12em;
+    background: #dc2626;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: white;
+}

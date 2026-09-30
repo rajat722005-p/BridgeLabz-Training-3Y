@@ -1,0 +1,89 @@
+/* Basic page styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    text-align: center;
+}
+
+header {
+    padding: 25px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Responsive Grid */
+.gallery {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+/* Image card */
+figure {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: filter 0.5s ease;
+}
+
+/* Different filters */
+.blur {
+    filter: blur(4px);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.brightness {
+    filter: brightness(150%);
+}
+
+.contrast {
+    filter: contrast(180%);
+}
+
+.hue {
+    filter: hue-rotate(120deg);
+}
+
+/* Remove filter on hover */
+img:hover {
+    filter: none;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* One column below 600px */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

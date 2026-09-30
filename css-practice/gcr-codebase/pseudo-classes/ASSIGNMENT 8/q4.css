@@ -1,0 +1,71 @@
+/* Element selector */
+p {
+    line-height: 1.6;
+}
+
+/* Class selector */
+.highlight {
+    background: #fef3c7;
+    padding: 10px;
+}
+
+/* ID selector */
+#special {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* Attribute selector */
+a[href] {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Child combinator (>) */
+.parent > p {
+    background: #dbeafe;
+    padding: 10px;
+}
+
+/* Descendant combinator */
+.parent p {
+    margin: 10px;
+}
+
+/* Adjacent sibling combinator (+) */
+ul + p {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* General sibling combinator (~) */
+ul ~ p {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #1e293b;
+    color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+section {
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}

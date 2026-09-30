@@ -1,0 +1,95 @@
+/* Basic page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #eef2f7;
+    color: #202938;
+    line-height: 1.8;
+}
+
+/* Article container */
+.article {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+    border: 1px solid #ccd5e0;
+    border-radius: 10px;
+}
+
+/* Article header */
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+/* Author and date */
+.subheading {
+    text-align: center;
+    color: #667085;
+    font-size: 1rem;
+    margin-bottom: 35px;
+    border-bottom: 2px solid #e1e5eb;
+    padding-bottom: 20px;
+}
+
+/* Paragraph styling */
+main p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Style first letter of every paragraph */
+main p::first-letter {
+    font-size: 2.8rem;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin-right: 6px;
+}
+
+/* Make first line bold */
+main p::first-line {
+    font-weight: bold;
+}
+
+/* Highlight important words */
+mark {
+    background-color: #ffe58f;
+    color: #172033;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Blockquote styling */
+blockquote {
+    margin: 35px 0;
+    padding: 25px 30px;
+    background-color: #e8f4f8;
+    border-left: 6px solid #16749b;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #29465b;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #e1e5eb;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #667085;
+}

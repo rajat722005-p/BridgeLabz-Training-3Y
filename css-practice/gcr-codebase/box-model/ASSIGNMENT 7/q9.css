@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #1e293b;
+    color: white;
+}
+
+/* Center form */
+.form-section {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Uniform spacing */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #94a3b8;
+    border-radius: 8px;
+    font: inherit;
+    transition: all 0.3s ease;
+}
+
+/* Focus selector changes outline */
+input:focus {
+    outline: 3px solid #2563eb;
+    outline-offset: 4px;
+    border-color: #2563eb;
+}
+
+textarea:focus {
+    outline: 3px dashed #16a34a;
+    outline-offset: 4px;
+    border-color: #16a34a;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+}

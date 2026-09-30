@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+}
+
+/* Heading depth using text-shadow */
+header {
+    text-align: center;
+    padding: 30px;
+    background: #1f2937;
+    color: white;
+}
+
+header h1 {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Arrange cards in one row */
+.card-container {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* Common card styling */
+.card {
+    width: 280px;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+/* Different shadow styles */
+.shadow-one {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-two {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-three {
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Lift cards on hover */
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f2937;
+    color: white;
+}

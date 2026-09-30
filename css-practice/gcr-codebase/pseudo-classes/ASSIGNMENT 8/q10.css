@@ -1,0 +1,154 @@
+/* Apply border-box to all elements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #1e3a8a;
+    color: white;
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* Main layout */
+main {
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Main card */
+.card {
+    width: 850px;
+    max-width: 100%;
+    padding: 30px;
+    background: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Flexbox content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    width: 350px;
+    max-width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+}
+
+/* Focus effect */
+input:focus {
+    outline: 3px solid #bfdbfe;
+    border-color: #2563eb;
+}
+
+.content img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 11px 25px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: 3px solid #93c5fd;
+}
+
+.reset {
+    background: #64748b;
+}
+
+.reset:hover {
+    background: #475569;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+}

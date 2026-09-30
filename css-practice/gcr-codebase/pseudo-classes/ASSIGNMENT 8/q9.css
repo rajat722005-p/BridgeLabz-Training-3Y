@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111827;
+    color: white;
+}
+
+main {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.effects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.effect-btn,
+.effect-link {
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: 2px solid #2563eb;
+    background: white;
+    color: #2563eb;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Combined hover effects */
+.effect-btn:hover,
+.effect-link:hover {
+    background: #2563eb;
+    color: white;
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Active effect */
+.effect-btn:active {
+    transform: scale(0.95);
+}
+
+/* Focus effect */
+.effect-btn:focus {
+    outline: 3px solid #93c5fd;
+}
+
+@media (max-width: 600px) {
+    .effects {
+        flex-direction: column;
+    }
+}

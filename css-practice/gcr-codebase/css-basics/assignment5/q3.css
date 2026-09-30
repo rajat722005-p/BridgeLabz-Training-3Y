@@ -1,0 +1,101 @@
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #172033;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #172033;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Team container */
+.team {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+/* Individual card */
+.card {
+    flex: 1;
+    padding: 30px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid #b8c4d6;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Card heading */
+.card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #315b8a;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Highlight Team Lead card */
+.team-lead {
+    background-color: #dff6ff;
+    border: 3px dashed #16749b;
+    transform: scale(1.03);
+}
+
+/* Responsive layout for screens below 600px */
+@media screen and (max-width: 600px) {
+
+    .team {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .team-lead {
+        transform: none;
+    }
+}
+
+/* Footer */
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #172033;
+    color: white;
+}

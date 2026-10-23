@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        input {
+            display: block;
+            width: 300px;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 2px solid gray;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        .invalid {
+            border-color: red;
+        }
+
+        .valid {
+            border-color: green;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+
+        #ticketDetails {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f2f2f2;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Movie Ticket Booking</h2>
+
+    <form id="bookingForm" novalidate>
+
+        <label for="customerName">Name:</label>
+        <input type="text" id="customerName" placeholder="Enter your name">
+        <span id="nameError" class="error"></span>
+
+        <label for="customerEmail">Email:</label>
+        <input type="text" id="customerEmail" placeholder="example@domain.com">
+        <span id="emailError" class="error"></span>
+
+        <label for="seatCount">Number of Seats:</label>
+        <input type="number" id="seatCount" placeholder="Choose 1 to 10">
+        <span id="seatsError" class="error"></span>
+
+        <button type="submit">Book Tickets</button>
+
+    </form>
+
+    <div id="ticketDetails"></div>
+
+    <script src="q5.js"></script>
+
+</body>
+</html>

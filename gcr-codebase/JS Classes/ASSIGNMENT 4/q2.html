@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        form {
+            max-width: 400px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+            border: 2px solid gray;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        .invalid {
+            border-color: red;
+        }
+
+        .valid {
+            border-color: green;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+        }
+
+        #formMessage {
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form id="registrationForm" novalidate>
+
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName" placeholder="Enter your name">
+        <span id="nameError" class="error"></span>
+
+        <label for="studentEmail">Email:</label>
+        <input type="text" id="studentEmail" placeholder="example@domain.com">
+        <span id="emailError" class="error"></span>
+
+        <label for="studentPhone">Phone:</label>
+        <input type="text" id="studentPhone" placeholder="10-digit phone number">
+        <span id="phoneError" class="error"></span>
+
+        <label for="studentPassword">Password:</label>
+        <input type="password" id="studentPassword" placeholder="Enter password">
+        <span id="passwordError" class="error"></span>
+
+        <button type="submit">Register</button>
+
+        <p id="formMessage"></p>
+
+    </form>
+
+    <script src="q2.js"></script>
+
+</body>
+</html>

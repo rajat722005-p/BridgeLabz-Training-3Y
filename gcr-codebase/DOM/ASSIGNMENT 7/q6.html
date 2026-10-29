@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table Filter</title>
+
+```
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+    }
+
+    input {
+        padding: 10px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    th, td {
+        border: 1px solid #999;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #ddd;
+    }
+
+    #noResults {
+        color: red;
+    }
+</style>
+```
+
+</head>
+<body>
+    <h2>Student Table Filter</h2>
+
+```
+<input type="text" id="searchInput"
+    placeholder="Search by name, branch or CGPA">
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>CGPA</th>
+        </tr>
+    </thead>
+
+    <tbody id="studentTable">
+        <tr>
+            <td>Rajat</td>
+            <td>CSE</td>
+            <td>8.2</td>
+        </tr>
+        <tr>
+            <td>Aman</td>
+            <td>ECE</td>
+            <td>7.5</td>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>CSE</td>
+            <td>9.1</td>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>IT</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>Neha</td>
+            <td>ME</td>
+            <td>7.8</td>
+        </tr>
+    </tbody>
+</table>
+
+<p id="noResults" hidden>No results found</p>
+
+<script src="q6.js"></script>
+```
+
+</body>
+</html>

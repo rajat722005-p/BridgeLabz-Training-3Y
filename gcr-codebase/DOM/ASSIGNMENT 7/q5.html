@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+```
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .modal img {
+        max-width: 90%;
+        max-height: 85vh;
+        object-fit: contain;
+    }
+
+    @media (max-width: 600px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <h2>Image Gallery</h2>
+
+```
+<div class="gallery" id="gallery">
+    <img src="https://picsum.photos/id/10/400/300" alt="Forest">
+    <img src="https://picsum.photos/id/20/400/300" alt="Nature">
+    <img src="https://picsum.photos/id/30/400/300" alt="Mountain">
+    <img src="https://picsum.photos/id/40/400/300" alt="Landscape">
+    <img src="https://picsum.photos/id/50/400/300" alt="Beach">
+    <img src="https://picsum.photos/id/60/400/300" alt="Scenery">
+</div>
+
+<div class="modal" id="modal">
+    <img id="modalImage" src="" alt="Preview">
+</div>
+
+<script src="q5.js"></script>
+```
+
+</body>
+</html>
